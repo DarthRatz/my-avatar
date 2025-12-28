@@ -1,8 +1,5 @@
-<script setup lang="ts"></script>
-<script lang="ts">
-export default {
-  name: 'UserAvatar',
-};
+<script setup lang="ts">
+defineOptions({ name: 'UserAvatar' });
 </script>
 
 <template>
