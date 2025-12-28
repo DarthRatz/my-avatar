@@ -1,20 +1,25 @@
 <script setup lang="ts"></script>
+<script lang="ts">
+export default {
+  name: 'UserAvatar',
+};
+</script>
 
 <template>
   <div class="avatar">
-  <div class="img__container">
-    <img class="img__circle" src="../assets/Epcot.avif" />
-    <img class="img__avatar" src="../assets/me.png" />
+    <div class="img__container">
+      <img class="img__circle" src="../assets/Epcot.avif" />
+      <img class="img__avatar" src="../assets/me.png" />
+    </div>
   </div>
-</div>
 </template>
 
 <style scoped>
 .avatar {
-position: relative;
-max-width: 15rem;
-margin-inline: auto;
-transition: transform 250ms ease-in-out;
+  position: relative;
+  max-width: 15rem;
+  margin-inline: auto;
+  transition: transform 250ms ease-in-out;
 }
 
 .img__container {
@@ -45,10 +50,7 @@ transition: transform 250ms ease-in-out;
 }
 
 .img__container:hover .img__avatar {
-  transform: translateY(10%)
-  scale(1.4);
+  transform: translateY(10%) scale(1.4);
   transition: transform 250ms ease-in-out;
-} 
-
-
+}
 </style>
