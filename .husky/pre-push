@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run tests before pushing
+npm run test:ci
+# knip runs in CI to avoid platform/loader differences; see .github/workflows/ci.yml
